@@ -38,5 +38,5 @@ spec:
               args:
                 - /bin/sh
                 - -c
-                - git clone https://github.com/gitops-workshop/poor-mans-gitops && cat poor-mans-gitops/apps/hello-world.yaml | envsubst | kubectl apply -l apps.kubernetes.io/instance=hello-world--validate=false -f -
+                - git clone https://github.com/gitops-workshop/poor-mans-gitops && cat poor-mans-gitops/apps/hello-world.yaml | envsubst | kubectl apply -l apps.kubernetes.io/instance=hello-world --prune --validate=false -f -
           restartPolicy: Never

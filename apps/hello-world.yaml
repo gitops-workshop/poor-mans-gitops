@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: main
   namespace: default
-  annotations:
+  labels:
     apps.kubernetes.io/instance: hello-world
 spec:
   containers:
