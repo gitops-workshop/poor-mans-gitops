@@ -1,8 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-world
+  name: main
   namespace: default
+  annotations:
+    apps.kubernetes.io/instance: hello-world
 spec:
   containers:
     - name: main
