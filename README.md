@@ -30,7 +30,7 @@ NAME                         SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AG
 cronjob.batch/gitops-agent   */3 * * * *   False     0        2m27s           3m55s
 ```
 
-Clean-up:
+### Clean Up
 
 ```
 k delete -f agent/install.yaml
