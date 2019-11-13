@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: main
-      image: my-app:v1
+      image: alexcollinsintuit/my-app:v1
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 8080
