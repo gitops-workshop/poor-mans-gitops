@@ -10,6 +10,3 @@ spec:
     - name: main
       image: alexcollinsintuit/my-app:v1
       imagePullPolicy: IfNotPresent
-      ports:
-        - containerPort: 8080
-          hostPort: 8080
