@@ -4,13 +4,13 @@ Build and install the agent:
 
 ```
 docker build -t poor-mans-gitops:v1 agent
-k apply -f agent/install.yaml
+kubectl -n default apply -f agent/install.yaml
 ```
 
 Wait for the agent to apply your manifests:
 
 ```
-watch kubectl get all
+watch kubectl -n default get all
 ```
 
 You should see:
@@ -33,6 +33,6 @@ cronjob.batch/gitops-agent   */3 * * * *   False     0        2m27s           3m
 ### Clean Up
 
 ```
-k delete -f agent/install.yaml
-k delete pod hello-world --force --grace-period=0
+kubectl -n default delete -f agent/install.yaml
+kubectl -n default  delete pod hello-world --force --grace-period=0
 ```
