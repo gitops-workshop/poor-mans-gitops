@@ -33,7 +33,7 @@ spec:
           serviceAccountName: gitops-agent
           containers:
             - name: main
-              image: poor-mans-gitops:v1
+              image: my-agent:v1
               imagePullPolicy: IfNotPresent
               args:
                 - /bin/sh
