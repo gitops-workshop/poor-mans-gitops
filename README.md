@@ -1,9 +1,14 @@
-# Poor Man's GitOps
+# Demo: Poor Man's GitOps
 
-Build and install the agent:
+### 1. Build The Agent
 
 ```
 docker build -t my-agent:v1 agent
+```
+
+### 2. Install The Agent
+
+```
 kubectl -n default apply -f agent/install.yaml
 ```
 
@@ -22,7 +27,7 @@ docker push alexcollinsintuit/agent:v1
 ```
 -->
 
-### Clean Up
+### Clean-Up
 
 ```
 kubectl -n default delete -f agent/install.yaml
